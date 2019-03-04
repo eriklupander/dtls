@@ -359,7 +359,8 @@ func (s *session) processHandshakePacket(rspRec *record) error {
 				}
 			}
 
-			if !s.resumed {
+			// Commenting out the resume check since it breaks handshake with the IKEA trådfri gateway
+			// if !s.resumed {
 				reqHs = newHandshake(handshakeType_ClientKeyExchange)
 
 				reqHs.ClientKeyExchange.Init([]byte(s.Client.Identity))
@@ -367,7 +368,7 @@ func (s *session) processHandshakePacket(rspRec *record) error {
 				if err != nil {
 					break
 				}
-			}
+			// }
 
 			s.initKeyBlock()
 
