@@ -1,13 +1,8 @@
 dtls
 ======
+This is a tiny fork of https://github.com/bocajim/dtls that works around an issue in the DTLS handshake when connecting to an IKEA Trådfri Gateway.
 
-[![Build Status](https://travis-ci.org/bocajim/dtls.svg?branch=master)](https://travis-ci.org/bocajim/dtls)
-[![Coverage](http://gocover.io/_badge/github.com/bocajim/dtls)](http://gocover.io/github.com/bocajim/dtls)
-[![GoDoc](https://godoc.org/github.com/bocajim/dtls?status.png)](http://godoc.org/github.com/bocajim/dtls)
-[![License](https://img.shields.io/npm/l/express.svg)](http://opensource.org/licenses/MIT)
-[![ReportCard](http://goreportcard.com/badge/github.com/bocajim/dtls)](http://goreportcard.com/report/bocajim/dtls)
-
-https://github.com/bocajim/dtls
+The rest of this README is identical to the original at the time of the forking.
 
 This package implements a [RFC-4347](https://tools.ietf.org/html/rfc4347) compliant DTLS client and server.  NOTE: This library is under active development and is not yet stable enough to be used in production.
 
